@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+        <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <country></country>
+                    <settlement>where is it</settlement>
+                    <repository>repository name</repository>
+                    <idno>identifier</idno>
+                    <altIdentifier type="former"> 
+                        <idno></idno>
+                    </altIdentifier> 
+                </msIdentifier>
+                <head>
+                    <title></title>
+                    <origDate notBefore="0001" notAfter="0010"></origDate>
+                    <origPlace></origPlace>
+                    <note type="catalog"><ref target="#"></ref></note>
+                    <note type="digi"><ref target="#"></ref></note>
+                    <note type="hsp"><ref target="#"></ref></note>
+                    <note type="manuscripta"><ref target="#"></ref></note>
+                </head> 
+                <msContents>
+                    <textLang mainLang="lat" otherLangs=""/> 
+                    <msItem xml:id="cod_46__6">
+                        <locus from="x" to="x"/>
+                        <title/> 
+                        <author/>
+                        <rubric/>
+                        <incipit/> 
+                        <explicit/> 
+                        <finalRubric/>
+                        <colophon></colophon>
+                        <decoNote></decoNote>
+                        <note/>
+                        <filiation></filiation>
+                        <listBibl>
+                            <bibl/>
+                        </listBibl>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="parch">
+                            <extent>
+                                <measure type="leavesCount" quantity="0" unit="folio"></measure>
+                                <dimensions type="leaf_current" unit="mm">
+                                    <height></height>
+                                    <width></width>
+                                </dimensions>
+                            </extent>
+                            <foliation/>
+                            <collation>
+                                <formula></formula>
+                            </collation>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout>
+                                <catchwords></catchwords>
+                                <signatures></signatures>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+<!--      ############## to store data from hands_role + hands_dated and hands_placed-->
+                        <handNote xml:id="hands_hit_id" scribe="hands.scribe">
+                            <idno>{hands.label}</idno>
+                            <desc>{hands.description}</desc>
+                            <noteGrp>
+<!--     ############# to reference msItems where this hand was active-->
+                                <note>
+                                    <ref target="#cod_46__6"/>
+                                    <locusGrp>
+                                        <locus></locus>
+                                    </locusGrp>
+                                    <desc>role of the scribe</desc>
+                                </note>
+                            </noteGrp> 
+                            <date notBefore="0001" notAfter="0001"></date>
+                            <placeName></placeName>
+                            <bibl></bibl>
+                        </handNote>
+                    </handDesc>
+                    <bindingDesc>
+                        <binding notBefore="0001" notAfter="0001">
+                            <p/>
+                        </binding>
+                    </bindingDesc>
+                    <accMat/> 
+                </physDesc>
+                <history>
+                    <summary></summary>
+                    <origin>
+                        <origPlace/>
+                        <origDate notBefore="0001" notAfter="0001"/>
+                    </origin>
+                    <provenance><placeName></placeName></provenance>
+                </history>
+                <additional>                    
+                    <listBibl>
+                        <bibl/>
+                    </listBibl>
+                </additional> 
+<!--                ################## codicological units as msParts-->
+                <msPart>
+                    <msIdentifier>
+                        <altIdentifier type="partial">
+                            <idno>Codicological unit #</idno>
+                            <note>
+                                <locusGrp>
+                                    <locus></locus>
+                                </locusGrp>
+                            </note>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>
+                        <origDate notBefore="0001" notAfter="0001"></origDate>
+                        <origPlace></origPlace>   
+                        <note></note>
+                    </head>
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <msItem>
+                            <locus from="x" to="x"/>
+                            <title/>
+                            <author/>
+                            <note></note>
+                            <rubric/>
+                            <incipit/>
+                            <explicit/>
+                            <finalRubric/>
+                            <filiation></filiation>
+                            <listBibl>
+                                <bibl></bibl>
+                            </listBibl>
+                            <note type="siglum"></note>                            
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <ab>
+                            <listObject>
+<!--      ####################  to store data on singular **quires** as 'object' elements-->
+                                <object>
+                                    <objectIdentifier>
+                                        <idno><!--Quire number--></idno>
+                                        <altIdentifier type="true">
+                                            <idno></idno>
+                                        </altIdentifier>                                        
+                                    </objectIdentifier>                                    
+                                    <physDesc>
+                                        <objectDesc form="quire">                            
+                                            <supportDesc>
+                                                <extent>
+                                                    <dimensions type="leaf" unit="mm">
+                                                        <height></height>
+                                                        <width></width>
+                                                    </dimensions>
+                                                </extent>
+                                                <collation>
+                                                    <formula></formula>
+                                                </collation>
+                                            </supportDesc>
+                                            <layoutDesc>
+                                                <layout ruledLines="0" writtenLines="0" columns="0">
+                                                    <dimensions type="written" unit="mm">
+                                                        <height></height>
+                                                        <width></width>
+                                                    </dimensions> 
+                                                    <catchwords></catchwords>
+                                                    <signatures></signatures>
+                                                </layout>
+                                            </layoutDesc>
+                                        </objectDesc>
+                                        <decoDesc>
+                                            <decoNote></decoNote>
+                                        </decoDesc>
+                                    </physDesc>
+                                </object>
+                            </listObject>
+                        </ab>
+                    </physDesc>
+                    <history>
+                        <provenance>
+                            <placeName></placeName>
+                        </provenance>
+                    </history>
+                </msPart>                    
+            </msDesc>
+            </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <editorialDecl>
+                    <p></p>
+                </editorialDecl>
+                <projectDesc>
+                    <p>Description originated within the project "Histories in transition".</p>
+                </projectDesc>
+            </encodingDesc>
+            <revisionDesc>
+                <listChange>
+                    <change></change>
+                </listChange>
+            </revisionDesc>
+            </teiHeader>
+            <facsimile>
+                <graphic url="#" n="1r"/>
+            </facsimile>   
+            <text>
+                <body>
+                    <head>
+                        <title></title>
+                    </head>
+                    <p/>
+                </body>
+            </text>
+</TEI>
