@@ -78,7 +78,7 @@
                             <idno>{hands.label}</idno>
                             <desc>{hands.description}</desc>
                             <noteGrp>
-<!--     ############# to reference msItems where this hand was active-->
+<!--     ############# to reference msItems where this hand was active + role in a desc element-->
                                 <note>
                                     <ref target="#cod_46__6"/>
                                     <locusGrp>
