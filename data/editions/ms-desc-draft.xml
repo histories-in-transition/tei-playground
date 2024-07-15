@@ -48,6 +48,10 @@
                         <listBibl>
                             <bibl/>
                         </listBibl>
+                        <msDesc>
+                            <physDesc>
+                            </physDesc>
+                        </msDesc>
                     </msItem>
                 </msContents>
                 <physDesc>
@@ -73,18 +77,20 @@
                         </layoutDesc>
                     </objectDesc>
                     <handDesc>
-<!--      ############## to store data from hands_role + hands_dated and hands_placed-->
-                        <handNote xml:id="hands_hit_id" scribe="hands.scribe">
+                        
+                        <!--      ############## to store data from hands_role + hands_dated and hands_placed
+                        <handNote> with @xml:id = hit_hands__# and @scribe = hit_people__# -->
+                        <handNote xml:id="hit_hands__" scribe="hit_people__">
                             <idno>{hands.label}</idno>
                             <desc>{hands.description}</desc>
-                            <noteGrp>
-<!--     ############# to reference msItems where this hand was active + role in a desc element-->
+                            <noteGrp> 
+                                <!-- noteGrp to collect as <note> (xml:id = hit_hands_role__#) with <ref> to the <msItems> where this hand was active + role in a <desc> element-->
                                 <note>
-                                    <ref target="#cod_46__6"/>
+                                    <ref target="#hit_ms_items__"/>
                                     <locusGrp>
-                                        <locus></locus>
+                                        <locus>{locus} from 'hands_role'</locus>
                                     </locusGrp>
-                                    <desc>role of the scribe</desc>
+                                    <desc>{role}</desc>
                                 </note>
                             </noteGrp> 
                             <date notBefore="0001" notAfter="0001"></date>
@@ -103,7 +109,7 @@
                     <summary></summary>
                     <origin>
                         <origPlace/>
-                        <origDate notBefore="0001" notAfter="0001"/>
+                        <origDate notBefore="0001" notAfter="0001" evidence="external"><note><bibl><abbr></abbr><biblScope></biblScope></bibl></note></origDate>
                     </origin>
                     <provenance><placeName></placeName></provenance>
                 </history>
@@ -153,12 +159,14 @@
 <!--      ####################  to store data on singular **quires** as 'object' elements-->
                                 <object>
                                     <objectIdentifier>
-                                        <idno><!--Quire number--></idno>
+                                        <idno n=""><!--Quire number--></idno>
+                                        <!--                 ############### for the 'correct' original number of the quire if applicable-->
                                         <altIdentifier type="true">
-                                            <idno></idno>
+                                            <idno n=""></idno>
                                         </altIdentifier>                                        
                                     </objectIdentifier>                                    
                                     <physDesc>
+                                        <ab><locus from="#" to="#"></locus></ab>
                                         <objectDesc form="quire">                            
                                             <supportDesc>
                                                 <extent>

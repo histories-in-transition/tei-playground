@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+        <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <country></country>
+                    <settlement>Würzburg</settlement>
+                    <repository>Universitätsbibliothek</repository>
+                    <idno>M.p.th.f 46</idno>
+                    <altIdentifier type="former"> 
+                        <idno></idno>
+                    </altIdentifier> 
+                </msIdentifier>
+                <head>
+                    <title></title>
+                    <origDate notBefore="0001" notAfter="0010"></origDate>
+                    <origPlace></origPlace>
+                    <note type="catalog"><ref target="http://vb.uni-wuerzburg.de/ub/mpthf46/ueber.html">Catalog</ref></note>
+                    <note type="digi"><ref target="http://vb.uni-wuerzburg.de/ub/mpthf46/ueber.html">Facsimile</ref></note>
+                    <note type="hsp"><ref target="https://resolver.staatsbibliothek-berlin.de/HSP0004634000000000">HSP</ref></note>
+                </head> 
+               
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="parch">
+                        <support><material>Schafpergament</material></support>
+                            <extent>
+                                <measure type="leavesCount" quantity="149" unit="folio">149</measure>
+                                <dimensions type="leaf_current" unit="mm">
+                                    <height>235</height>
+                                    <width>170</width>
+                                </dimensions>
+                            </extent>
+                            <foliation/>
+                            <collation>
+                                <formula>2 IV<hi rend="sup">16</hi> + III<hi rend="sup">22</hi> + 3 IV<hi rend="sup">46</hi> + 2 III<hi rend="sup">58</hi> + 2 IV<hi rend="sup">74</hi> + IV<hi rend="sup">82</hi> und 1 Bl.83 + III<hi rend="sup">89</hi> + 4 IV<hi rend="sup">121</hi> + II<hi rend="sup">125</hi> und 1Bl.<hi rend="sup">126</hi> + IV<hi rend="sup">134</hi> + 2 II<hi rend="sup">142</hi> und 2 Bl.<hi rend="sup">144</hi> + I und 3 Bl.<hi rend="sup">149</hi></formula>
+                            </collation>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout>
+                                <catchwords></catchwords>
+                                <signatures>In römischen Zahlen</signatures>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+<!--      ############## to store data from hands_role + hands_dated and hands_placed
+                        <handNote> with @xml:id = hit_hands__# and @scribe = hit_people__#
+                        -->
+                        <handNote xml:id="hit_hands__12" scribe="hit_people__40">
+                            <idno>H. 2</idno>
+                            <desc>Arn stil</desc>
+                            <noteGrp>
+                                <!-- noteGrp to collect as <note> (xml:id = hit_hands_role__#) with <ref> to the <msItems> where this hand was active + role in a <desc> element-->
+                                <note>
+                                    <ref target="#hit_ms_items__5"/>
+                                    <locusGrp>
+                                        <locus>1r-21r</locus>
+                                    </locusGrp>
+                                    <desc>scribe</desc>
+                                </note>
+                            </noteGrp> 
+                            <date notBefore="0001" notAfter="0001"></date>
+                            <placeName></placeName>
+                            <bibl></bibl>
+                        </handNote>
+                        <handNote xml:id="hit_hands__5" scribe="baldo">
+                            <idno>H. 3</idno>
+                            <desc>Baldos Hand</desc>
+                            <noteGrp>
+                                <!-- noteGrp to collect in <note> elements (xml:id = hit_hands_role__#) with <ref> to the <msItems> where this hand was active + role in a <desc> element-->
+                                <note xml:id="hit_hands_role__10">
+                                    <ref target="#hit_ms_items__5"/>
+                                    <locusGrp>
+                                        <locus>20v</locus>
+                                    </locusGrp>
+                                    <desc>annotator</desc>
+                                </note>
+                                <note xml:id="hit_hands_role__4">
+                                    <ref target="#hit_ms_items__13"/>
+                                    <locusGrp>
+                                        <locus>22v</locus>
+                                    </locusGrp>
+                                    <desc>scribe</desc>
+                                </note>
+                            </noteGrp> 
+                            <date notBefore="0821" notAfter="0828" evidence="external"><note><bibl><abbr>Bischoff 1980</abbr><biblScope>134</biblScope></bibl></note></date>
+                            <placeName></placeName>
+                            <bibl></bibl>
+                        </handNote>                        
+                    </handDesc>
+                    <bindingDesc>
+                        <binding notBefore="1400" notAfter="1499">
+                            <p>Würzburger Dombibliothekseinband. Holzdeckel mit unregelmäßig beschnittenem Schaflederrücken. Titel auf Pergamentstreifen auf dem Vorderdeckel. Signaturschild auf dem Rücken. Reste einer Schließe. Spuren von Kettenbefestigung am Hinterdeckel oben. Restauriert. Der gesprungene Hintere Deckel wird von alten Metallklammern zusammengehalten</p>
+                        </binding>
+                    </bindingDesc>
+                    <accMat>Als Makulatur wurden Pergamentstreifen aus M. p. th. f. 188 verwendet.</accMat> 
+                </physDesc>
+                <history>
+                    <summary>In Zusammenarbeit der beiden Schriftzentren Saint-Amand und Salzburg entstanden. Befand sich im Jahr 976 noch in Salzburg. Signaturen: 1r (LXXXIII, 15. Jhdt), 2r (LXXXIII, 15. Jhdt), Buchrücken (81, 18. Jhdt).</summary>
+                    <origin>
+                        <origPlace>Salzburg</origPlace>
+                        <origPlace>Saint-Amand-les-Eaux</origPlace>
+                        <origDate notBefore="0800" notAfter="0824" evidence="bischoff">9 Jh., erstes Viertel <note><bibl>Bischoff, 1980 <biblScope>133-134</biblScope></bibl></note></origDate>
+                    </origin>
+                    <provenance><orgName>Dombibliothek Würzburg</orgName></provenance>
+                </history>
+                <additional>                    
+                    <listBibl>
+                        <bibl/>
+                    </listBibl>
+                </additional> 
+                <!--                ################## strata as msParts-->
+                <msPart>
+                    <msIdentifier>
+                        <altIdentifier type="stratum">
+                            <idno>Stratum 1</idno>
+                            <note>Dieses Stratum beschreibt die Anlage der Handschrift und besteht aus den Ostertafeln, den Mondtabellen und Bedas De temporum ratione ohne den Chronik-Abschnitt</note>
+                        </altIdentifier>
+                    </msIdentifier>
+                </msPart>
+                <!--                ################## codicological units as msParts-->
+                <msPart>
+                    <msIdentifier>
+                        <altIdentifier type="partial">
+                            <idno>Codicological unit 1</idno>
+                            <note>
+                                <locusGrp>
+                                    <locus from="1r" to="97v">1r-97v</locus>
+                                </locusGrp>
+                            </note>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <!--<head>
+                        <origDate notBefore="0001" notAfter="0001"></origDate>
+                        <origPlace></origPlace>   
+                        <note></note>
+                    </head>-->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/> 
+                        <msItem xml:id="hit_ms_items__10">
+                            <locus from="1v" to="2r">1v-2r</locus>
+                            <title>Hieronymi chronicon</title> 
+                            <note type="excerpt">Auszug der Jahre 47, 56 und 70 n. Chr</note>                      
+                        </msItem>
+                        <msItem xml:id="hit_ms_items__5">
+                            <locus from="1v" to="21r">1v-21r</locus>
+                            <title>De cyclo paschali</title> 
+                            <author>Ps.-Beda</author>                      
+                        </msItem>
+                        <msItem xml:id="hit_ms_items__12">
+                            <locus from="11v" to="16v">11v-16v</locus>
+                            <title>Annales Iuvavenses maiores</title>                      
+                        </msItem>
+                        <msItem xml:id="hit_ms_items__7">
+                            <locus from="21v" to="22r">21v-22r</locus>
+                            <title>Epactae lunae &amp; solis</title>                      
+                        </msItem>
+                        <msItem xml:id="hit_ms_items__13">
+                            <locus from="22v" to="22v">22v-22v</locus>
+                            <title>Annales Iuvavenses minores</title>                      
+                        </msItem>
+                        <msItem xml:id="hit_ms_items__8">
+                            <locus from="23r" to="97v">23r-97v</locus>
+                            <title>De temporum ratione</title>  
+                            <author>Beda</author>                             
+                        </msItem>
+                       
+                    </msContents>
+                    <physDesc>
+                        <ab>
+                            <listObject>
+<!--      ####################  to store data on singular **quires** as 'object' elements-->
+                                <object xml:id="hit_quire__5">
+                                    <objectIdentifier>
+                                        <idno n="1">L. 1</idno>   
+                                    </objectIdentifier>                           
+                                    <physDesc>
+                                        <ab><locus from="1r" to="8v">1r-8v</locus></ab>
+                                        <objectDesc form="quire">                            
+                                            <supportDesc>
+                                                <extent>
+                                                    <dimensions type="leaf" unit="mm">
+                                                        <height>150</height>
+                                                        <width>100</width>
+                                                    </dimensions>
+                                                </extent>
+                                                <collation>
+                                                    <formula>IV<hi rend="sup">8</hi></formula>
+                                                </collation>
+                                            </supportDesc>
+                                            <layoutDesc>
+                                                <layout ruledLines="0" writtenLines="0" columns="4 5">
+                                                    <dimensions type="written" unit="mm">
+                                                        <height>120</height>
+                                                        <width>80</width>
+                                                    </dimensions> 
+                                                    <catchwords></catchwords>
+                                                    <signatures></signatures>
+                                                    <note>Ostertafeln bestehend aus 5 Rubriken auf der Verso- und 4 Rubriken auf der Rectoseite</note>
+                                                </layout>
+                                            </layoutDesc>
+                                        </objectDesc>
+                                        <decoDesc>
+                                            <decoNote></decoNote>
+                                        </decoDesc>
+                                    </physDesc>
+                                </object>
+                                <object xml:id="hit_quire__7">
+                                    <objectIdentifier>
+                                        <idno n="2">L. 2</idno>   
+                                    </objectIdentifier>                           
+                                    <physDesc>
+                                        <ab><locus from="9r" to="16v">9r-16v</locus></ab>
+                                        <objectDesc form="quire">                            
+                                            <supportDesc>
+                                                <extent>
+                                                    <dimensions type="leaf" unit="mm">
+                                                        <height>150</height>
+                                                        <width>100</width>
+                                                    </dimensions>
+                                                </extent>
+                                                <collation>
+                                                    <formula>IV<hi rend="sup">16</hi></formula>
+                                                </collation>
+                                            </supportDesc>
+                                            <layoutDesc>
+                                                <layout ruledLines="0" writtenLines="0" columns="">
+                                                    <dimensions type="written" unit="mm">
+                                                        <height>120</height>
+                                                        <width>80</width>
+                                                    </dimensions> 
+                                                    <catchwords></catchwords>
+                                                    <signatures></signatures>
+                                                    <note></note>
+                                                </layout>
+                                            </layoutDesc>
+                                        </objectDesc>
+                                        <decoDesc>
+                                            <decoNote></decoNote>
+                                        </decoDesc>
+                                    </physDesc>
+                                </object>
+                            </listObject>
+                        </ab>
+                    </physDesc>
+                    <history>
+                        <provenance>
+                            <placeName>Saint-Amand-les-Eaux</placeName>
+                        </provenance>
+                    </history>
+                </msPart>
+                <msPart>
+                    <msIdentifier>
+                        <altIdentifier type="partial">
+                            <idno>Codicological unit 2</idno>
+                            <note>
+                                <locusGrp>
+                                    <locus from="98r" to="144v">98r-144v</locus>
+                                </locusGrp>
+                            </note>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <!--<head>
+                        <origDate notBefore="0001" notAfter="0001"></origDate>
+                        <origPlace></origPlace>   
+                        <note></note>
+                    </head>-->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <msItem>
+                            <locus from="x" to="x"/>
+                            <title/>
+                            <author/>
+                            <note></note>
+                            <rubric/>
+                            <incipit/>
+                            <explicit/>
+                            <finalRubric/>
+                            <filiation></filiation>
+                            <listBibl>
+                                <bibl></bibl>
+                            </listBibl>
+                            <note type="siglum"></note>                            
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <ab>
+                            <listObject>
+                                <!--      ####################  to store data on singular **quires** as 'object' elements-->
+                                <object>
+                                    <objectIdentifier>
+                                        <idno><!--Quire number--></idno>
+                                        <altIdentifier type="true">
+                                            <idno></idno>
+                                        </altIdentifier>                                        
+                                    </objectIdentifier>                                    
+                                    <physDesc>
+                                        <objectDesc form="quire">                            
+                                            <supportDesc>
+                                                <extent>
+                                                    <dimensions type="leaf" unit="mm">
+                                                        <height></height>
+                                                        <width></width>
+                                                    </dimensions>
+                                                </extent>
+                                                <collation>
+                                                    <formula></formula>
+                                                </collation>
+                                            </supportDesc>
+                                            <layoutDesc>
+                                                <layout ruledLines="0" writtenLines="0" columns="0">
+                                                    <dimensions type="written" unit="mm">
+                                                        <height></height>
+                                                        <width></width>
+                                                    </dimensions> 
+                                                    <catchwords></catchwords>
+                                                    <signatures></signatures>
+                                                </layout>
+                                            </layoutDesc>
+                                        </objectDesc>
+                                        <decoDesc>
+                                            <decoNote></decoNote>
+                                        </decoDesc>
+                                    </physDesc>
+                                </object>
+                            </listObject>
+                        </ab>
+                    </physDesc>
+                    <history>
+                        <provenance>
+                            <placeName>Salzburg</placeName>
+                        </provenance>
+                    </history>
+                </msPart>
+                <msPart>
+                    <msIdentifier>
+                        <altIdentifier type="partial">
+                            <idno>Codicological unit 3</idno>
+                            <note>
+                                <locusGrp>
+                                    <locus from="149r" to="149v">149r-v</locus>
+                                </locusGrp>
+                                Einzelnes Blatt, das bereits in Saint-Amand oder auch erst in Salzburg in die Handschrift eingebunden wurde.
+                            </note>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <msItem>
+                            <locus from="x" to="x"/>
+                            <title/>
+                            <author/>
+                            <note></note>
+                            <rubric/>
+                            <incipit/>
+                            <explicit/>
+                            <finalRubric/>
+                            <filiation></filiation>
+                            <listBibl>
+                                <bibl></bibl>
+                            </listBibl>
+                            <note type="siglum"></note>                            
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <ab>
+                            <listObject>
+                                <!--      ####################  to store data on singular **quires** as 'object' elements-->
+                                <object>
+                                    <objectIdentifier>
+                                        <idno><!--Quire number--></idno>
+                                        <altIdentifier type="true">
+                                            <idno></idno>
+                                        </altIdentifier>                                        
+                                    </objectIdentifier>                                    
+                                    <physDesc>
+                                        <objectDesc form="quire">                            
+                                            <supportDesc>
+                                                <extent>
+                                                    <dimensions type="leaf" unit="mm">
+                                                        <height></height>
+                                                        <width></width>
+                                                    </dimensions>
+                                                </extent>
+                                                <collation>
+                                                    <formula></formula>
+                                                </collation>
+                                            </supportDesc>
+                                            <layoutDesc>
+                                                <layout ruledLines="0" writtenLines="0" columns="0">
+                                                    <dimensions type="written" unit="mm">
+                                                        <height></height>
+                                                        <width></width>
+                                                    </dimensions> 
+                                                    <catchwords></catchwords>
+                                                    <signatures></signatures>
+                                                </layout>
+                                            </layoutDesc>
+                                        </objectDesc>
+                                        <decoDesc>
+                                            <decoNote></decoNote>
+                                        </decoDesc>
+                                    </physDesc>
+                                </object>
+                            </listObject>
+                        </ab>
+                    </physDesc>
+                    <history>
+                        <provenance>
+                            <placeName></placeName>
+                        </provenance>
+                    </history>
+                </msPart>
+            </msDesc>
+            </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <editorialDecl>
+                    <p></p>
+                </editorialDecl>
+                <projectDesc>
+                    <p>Description originated within the project "Histories in transition".</p>
+                </projectDesc>
+            </encodingDesc>
+        <profileDesc>
+            
+        </profileDesc>
+            <revisionDesc>
+                <listChange>
+                    <change></change>
+                </listChange>
+            </revisionDesc>
+            </teiHeader>
+            <facsimile>
+                <graphic url="#" n="1r"/>
+            </facsimile>   
+            <text>
+                <body>
+                    <head>
+                        <title></title>
+                    </head>
+                    <p/>
+                </body>
+            </text>
+</TEI>
